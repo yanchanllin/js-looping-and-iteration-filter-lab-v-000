@@ -8,12 +8,12 @@ function findMatching(drivers,string) {
 function fuzzyMatch(drivers,string) {
   const lengthof = string.length;
   return drivers.filter(function(st){
-    return string === st.slice(0,lengthof)
+    return string === st.slice(0,lengthof);
   })
 }
 
 function matchName(drivers,string) {
   return drivers.filter(funtion(st){
-    return st.name === string
+    return st.name === string;
   })
 }
