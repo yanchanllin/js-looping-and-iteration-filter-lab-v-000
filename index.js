@@ -11,3 +11,9 @@ function fuzzyMatch(drivers,string) {
     return string === st.slice(0,lengthof)
   })
 }
+
+function matchName(drivers,string) {
+  return drivers.filter(funtion(st){
+    return st.name === string;
+  })
+}
